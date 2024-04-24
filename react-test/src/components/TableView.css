@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+
+body{
+    background-image: url('../../public/background.png');
+}
+.holder{
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo-holder{
+    height: 10%;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+.admin-text{
+    color: white;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+.user-holder{
+    height: 5%;
+    width: 30%;
+    position: absolute;
+    top: 16%;
+    left: 5%;
+}
+
+.users{
+    height: 90%;
+    width: 25%;
+    margin-right: 3%;
+    background-color: rgb(255, 200, 0);
+    cursor: pointer;
+}
+
+.users :active{
+    background: rgb(255, 200, 0);
+    color: black;
+}
+
+.menu-holder{
+    height: 8%;
+    width: 30%;
+    clip-path: polygon(0 0 ,100% 0% , 90% 100%, 10% 100% );
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('../../public/background2.png');
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-item{
+    height: 80%;
+    background-image: transparent;
+    cursor: pointer;
+}
+
+.top-right-holder{
+    height: 8%;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('../../public/background.png');
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.notification{
+    height: 50%;
+    background-image: url('../../public/background.png');
+    cursor: pointer
+}
+
+.profile{
+    height: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.middle-holder{
+    height: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+
+.definition-holder , .pending-holder{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#definition , #pending{
+    color: white;
+    padding-left: 3%;
+}
+
+.point-holder{
+    height: 2%;
+    width: 4%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 8%;
+    left: 48%;
+    background-image: url('../../public/background2.png');
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.point{
+    height: 80%;
+}
+
+.table-holder{
+    height: 60%;
+    width: 90%;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    overflow: scroll;
+}
+
+.table-holder::-webkit-scrollbar{
+    display: none;
+}
+
+.add-user{
+    height: 5%;
+    width: 12%;
+    position: absolute;
+    top: 21%;
+    left: 83%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    background-color: rgb(255, 200, 0);
+
+}
+
+#add-user-text{
+    margin-left: 20%;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  tr {
+    background-image: url('../../public/background2.png');
+    cursor: default;
+  }
+  
+  td {
+    border-top: 1px solid transparent;
+    border-bottom: 5px solid rgb(7, 11, 68);
+    padding: 8px;
+    color: white;
+  }
+
+  .import-holder{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(255, 200, 0);;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .adduser-details{
+    height: 900%;
+    width: 100%;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    z-index: 5;
+    background-color: rgb(255, 200, 0);;
+}
+
+.adduser-input{
+    height: 10%;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    background-image: url('../../public/white-background.png');
+    border: none;
+}
+
+#description-short{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.adduser-submit-holder{
+    height: 15%;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adduser-submit-holder>button{
+    height: 80%;
+    width: 80%;
+    background-color: #0a131d;
+    color: white;
+    margin-left: 5%;
+}
+  
+ thead {
+    color: white;
+    background-image: url('../../public/background2.png');
+    border-color:  rgb(7, 11, 68);
+ }
+
+ th{
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid rgb(7, 11, 68);
+ }
+
+#search-col th {
+    position: relative;
+}
+
+#search-col th input {
+    position: absolute;
+    top: 10%;
+    left: 25px; 
+    width: 50%;
+    height: 50%;
+    border-radius: 3px;
+    padding: 4px 8px;
+    border: none;
+    z-index: 1;
+}
+  
+#search-col th input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+
+.below-menu{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 1%;
+    cursor: pointer
+}
+
+.below-middle-holder{
+    height: 8%;
+    width: 25%;
+    position: absolute;
+    left: 37.5%;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
+}
+
+.below-right-holder{
+    height: 8%;
+    width: 10%;
+    position: absolute;
+    left: 85%;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.details-row{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+.style-row{
+    margin: 0;
+    height: 15%;
+    width: 100%;
+    clip-path: polygon(0 0 ,100% 0% , 94% 100%, 6% 100% );
+    background-image: url('../../public/background2.png');
+
+}
+
+.other-details{
+    height: 90%;
+    width: 88%;
+    margin: 0;
+    margin-left: 6%;
+    background-image: url('../../public/background2.png');
+    
+}
+
+.other-details-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1%;
+    height: 20px;
+   
+}
+
+.other-details-buttons>button{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(255, 200, 0);
+    border: none;
+    margin-left: 5%;
+}
+
+.popup-row-data{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+  
+
+
+
+  
+
+  
+  
+ 
+  
